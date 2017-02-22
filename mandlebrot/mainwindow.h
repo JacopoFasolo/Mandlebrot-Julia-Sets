@@ -6,6 +6,7 @@
 #include <QPixmap>
 #include <QColor>
 #include <QDebug>
+#include <math.h>
 
 namespace Ui {
 class MainWindow;
@@ -45,7 +46,7 @@ protected:
     double a, b;
     int dimX, dimY;
 
-    double map(int, int, int,int, int);
+    double map(double, double, double,double, double);
     void update();
 
 private:
